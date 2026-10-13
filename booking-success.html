@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservation Request Confirmed | Kerio Dreams Restaurant</title>
+  <meta name="description" content="Your table reservation request at Kerio Dreams Restaurant has been submitted.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS Design System -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Prototype Notice -->
+  <div class="prototype-notice">
+    <span>💡 <strong>Interactive Prototype</strong>: Reservation request saved locally. Forward directly to Kerio Dreams via WhatsApp for confirmation.</span>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container-wide header-inner">
+      <a href="index.html" class="logo-brand">
+        <span class="logo-title">Kerio Dreams</span>
+        <span class="logo-tagline">Restaurant • Eldoret</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="menu.html" class="nav-link">Our Menu</a>
+        <a href="order.html" class="nav-link">Order Online</a>
+        <a href="booking.html" class="nav-link">Book a Table</a>
+        <a href="experience.html" class="nav-link">Our Experience</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="booking.html" class="btn btn-terracotta btn-sm">Reserve Table</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Success Confirmation Content -->
+  <section class="section-py-lg" style="background-color: var(--color-ivory);">
+    <div class="container">
+      <div class="confirmation-card animate-fade-in">
+        <div class="confirmation-header">
+          <div style="font-size: 2.5rem; margin-bottom: 8px;">🎉</div>
+          <h1 style="color: var(--color-ivory); font-size: var(--text-2xl); font-family: var(--font-serif); margin-bottom: 8px;">Thank You for Choosing Kerio Dreams</h1>
+          <p style="color: rgba(247, 243, 233, 0.9); font-size: var(--text-sm);">
+            Your reservation request is prepared. Review your visit details below.
+          </p>
+        </div>
+
+        <div class="confirmation-body">
+          <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--color-border); padding-bottom: 16px; margin-bottom: 16px;">
+            <div>
+              <span style="font-size: var(--text-xs); color: var(--color-text-light); text-transform: uppercase; font-weight: 700;">Demo Reference No.</span>
+              <div id="confRefNumber" style="font-size: var(--text-lg); font-weight: 700; color: var(--color-terracotta);">KD-RES-SAMPLE</div>
+            </div>
+            <span class="badge badge-sage">Request Saved</span>
+          </div>
+
+          <div class="receipt-details-list">
+            <div class="receipt-row">
+              <span>Guest Name:</span>
+              <strong id="confName">-</strong>
+            </div>
+            <div class="receipt-row">
+              <span>Contact Number:</span>
+              <strong id="confPhone">-</strong>
+            </div>
+            <div class="receipt-row">
+              <span>Reserved Date:</span>
+              <strong id="confDate">-</strong>
+            </div>
+            <div class="receipt-row">
+              <span>Dining Time:</span>
+              <strong id="confTime">-</strong>
+            </div>
+            <div class="receipt-row">
+              <span>Party Size:</span>
+              <strong id="confGuests">-</strong>
+            </div>
+            <div class="receipt-row">
+              <span>Seating Preference:</span>
+              <strong id="confExperience">-</strong>
+            </div>
+            <div class="receipt-row" id="confNotesRow">
+              <span>Special Requests:</span>
+              <span id="confNotes" style="font-style: italic;">None</span>
+            </div>
+          </div>
+
+          <div style="background-color: var(--color-gold-light); border-left: 4px solid var(--color-gold); padding: 14px 18px; border-radius: var(--radius-sm); margin-bottom: 24px; font-size: var(--text-xs); color: #7B5208;">
+            <strong>Next Step</strong>: Kerio Dreams team confirms all live table arrangements directly. Click below to send this reservation directly to WhatsApp for rapid confirmation.
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 12px;">
+            <button id="sendWhatsAppBtn" class="btn btn-terracotta btn-lg" style="width: 100%;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771z"/>
+              </svg>
+              Send Request to WhatsApp (+254 720 778 059)
+            </button>
+
+            <button id="copySummaryBtn" class="btn btn-secondary btn-sm" style="width: 100%;">
+              📋 Copy Reservation Summary
+            </button>
+
+            <div style="display: flex; gap: 12px; margin-top: 8px;">
+              <a href="menu.html" class="btn btn-primary btn-sm" style="flex: 1;">Explore Menu</a>
+              <a href="index.html" class="btn btn-secondary btn-sm" style="flex: 1;">Return Home</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <div>© 2026 Kerio Dreams Restaurant. P.O. Box 4660-30100, Eldoret.</div>
+      <div>Interactive Prototype Demonstration</div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/config.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/whatsapp.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      let res = null;
+      try {
+        res = JSON.parse(sessionStorage.getItem('latest_reservation'));
+      } catch (e) {}
+
+      if (!res) {
+        // Fallback demo data
+        res = {
+          refNumber: "KD-RES-782910",
+          name: "Guest Visitor",
+          phone: "+254 720 778 059",
+          date: new Date().toISOString().split('T')[0],
+          time: "1:00 PM",
+          guests: 2,
+          experience: "Garden Dining",
+          specialRequests: "Standard garden seating"
+        };
+      }
+
+      document.getElementById('confRefNumber').textContent = res.refNumber;
+      document.getElementById('confName').textContent = res.name;
+      document.getElementById('confPhone').textContent = res.phone;
+      document.getElementById('confDate').textContent = res.date;
+      document.getElementById('confTime').textContent = res.time;
+      document.getElementById('confGuests').textContent = `${res.guests} Guest${res.guests > 1 ? 's' : ''}`;
+      document.getElementById('confExperience').textContent = res.experience;
+      document.getElementById('confNotes').textContent = res.specialRequests || 'None provided';
+
+      document.getElementById('sendWhatsAppBtn').onclick = () => {
+        window.WhatsAppService.openBookingInquiry(res);
+      };
+
+      document.getElementById('copySummaryBtn').onclick = () => {
+        const summary = `Kerio Dreams Reservation (${res.refNumber})\n` +
+                        `Name: ${res.name}\n` +
+                        `Date: ${res.date} at ${res.time}\n` +
+                        `Guests: ${res.guests}\n` +
+                        `Experience: ${res.experience}\n` +
+                        `Contact: ${res.phone}`;
+        window.Utils.copyToClipboard(summary, 'Reservation summary copied!');
+      };
+    });
+  </script>
+</body>
+</html>

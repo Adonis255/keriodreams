@@ -1,0 +1,6 @@
+{
+  "name": "Kerio Dreams Restaurant",
+  "description": "Premium digital experience for Kerio Dreams Restaurant in Eldoret, Kenya featuring authentic Kenyan cuisine, interactive digital menu, table reservations, and garden dining.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Online & Checkout | Kerio Dreams Restaurant Eldoret</title>
+  <meta name="description" content="Review your order basket, select takeaway collection or delivery inquiry, and submit your food order at Kerio Dreams Restaurant.">
+  <meta property="og:title" content="Order Online — Kerio Dreams Restaurant">
+  <meta property="og:description" content="Place advance takeaway or delivery inquiries for fresh Kenyan food and nyama choma.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS Design System -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Prototype Notice -->
+  <div class="prototype-notice">
+    <span>💡 <strong>Interactive Prototype</strong>: Orders submitted here generate a demo reference. Direct payment and preparation are verified via WhatsApp or phone.</span>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container-wide header-inner">
+      <a href="index.html" class="logo-brand">
+        <span class="logo-title">Kerio Dreams</span>
+        <span class="logo-tagline">Restaurant • Eldoret</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="menu.html" class="nav-link">Our Menu</a>
+        <a href="order.html" class="nav-link active">Order Online</a>
+        <a href="booking.html" class="nav-link">Book a Table</a>
+        <a href="experience.html" class="nav-link">Our Experience</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="reviews.html" class="nav-link">Reviews</a>
+        <a href="offers.html" class="nav-link">Offers</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="booking.html" class="btn btn-terracotta btn-sm">Reserve Table</a>
+        
+        <button class="cart-toggle-btn" aria-label="Open Order Basket">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="cart-badge" style="display: none;">0</span>
+        </button>
+
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Open Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-overlay" id="mobileOverlay"></div>
+  <aside class="mobile-drawer" id="mobileDrawer">
+    <div class="mobile-drawer-header">
+      <div class="logo-brand">
+        <span class="logo-title" style="font-size: 1.25rem;">Kerio Dreams</span>
+        <span class="logo-tagline">Restaurant • Eldoret</span>
+      </div>
+      <button id="mobileNavClose" style="font-size: 1.5rem; color: var(--color-charcoal);">&times;</button>
+    </div>
+    <div class="mobile-drawer-links">
+      <a href="index.html" class="mobile-drawer-link">Home</a>
+      <a href="menu.html" class="mobile-drawer-link">Our Menu</a>
+      <a href="order.html" class="mobile-drawer-link active">Order Online</a>
+      <a href="booking.html" class="mobile-drawer-link">Book a Table</a>
+      <a href="experience.html" class="mobile-drawer-link">Our Experience</a>
+      <a href="gallery.html" class="mobile-drawer-link">Photo Gallery</a>
+      <a href="about.html" class="mobile-drawer-link">About Us</a>
+      <a href="reviews.html" class="mobile-drawer-link">Reviews</a>
+      <a href="offers.html" class="mobile-drawer-link">Promotions & Offers</a>
+      <a href="contact.html" class="mobile-drawer-link">Contact & Directions</a>
+    </div>
+    <div class="mobile-drawer-footer">
+      <a href="booking.html" class="btn btn-terracotta" style="width: 100%;">Book a Table</a>
+      <a href="tel:+254720778059" class="btn btn-secondary btn-sm" style="width: 100%;">Call: +254 720 778 059</a>
+    </div>
+  </aside>
+
+  <!-- Page Banner -->
+  <section class="section-py" style="background-color: var(--color-ivory); padding-bottom: var(--space-4);">
+    <div class="container text-center" style="text-align: center;">
+      <span class="section-subtitle">Takeaway & Inquiries</span>
+      <h1 class="section-title">Complete Your Order</h1>
+      <p class="section-lead" style="max-width: 620px; margin: 0 auto;">
+        Review your freshly prepared dishes, select your pickup time or delivery address, and submit your request.
+      </p>
+    </div>
+  </section>
+
+  <!-- Checkout Section -->
+  <section style="background-color: var(--color-ivory); padding-bottom: var(--space-16);">
+    <div class="container">
+      <div class="order-layout">
+        
+        <!-- Left Column: Customer & Delivery Details Form -->
+        <div style="background-color: var(--color-ivory-light); border: 1px solid var(--color-border); border-radius: var(--radius-xl); padding: var(--space-8);">
+          <h2 style="font-size: var(--text-2xl); font-family: var(--font-serif); margin-bottom: var(--space-6);">1. Dining / Order Method</h2>
+
+          <form id="checkoutForm">
+            <!-- Order Type Selector -->
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4); margin-bottom: var(--space-6);">
+              <label style="border: 2px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--space-4); display: flex; align-items: center; gap: 10px; cursor: pointer; background: var(--color-white);" id="labelTakeaway">
+                <input type="radio" name="orderTypeRadio" id="orderTypeTakeaway" value="takeaway" checked>
+                <div>
+                  <div style="font-weight: 700; font-size: var(--text-sm);">Takeaway Pickup</div>
+                  <div style="font-size: 0.75rem; color: var(--color-text-muted);">Collect directly at restaurant</div>
+                </div>
+              </label>
+
+              <label style="border: 2px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--space-4); display: flex; align-items: center; gap: 10px; cursor: pointer; background: var(--color-white);" id="labelDelivery">
+                <input type="radio" name="orderTypeRadio" id="orderTypeDelivery" value="delivery">
+                <div>
+                  <div style="font-weight: 700; font-size: var(--text-sm);">Delivery Inquiry</div>
+                  <div style="font-size: 0.75rem; color: var(--color-text-muted);">Subject to confirmation</div>
+                </div>
+              </label>
+            </div>
+
+            <!-- Customer Details -->
+            <h3 style="font-size: var(--text-lg); font-family: var(--font-serif); margin-bottom: var(--space-4);">2. Contact Information</h3>
+            
+            <div class="form-group" id="custNameGroup">
+              <label class="form-label" for="custName">Full Name <span class="required">*</span></label>
+              <input type="text" id="custName" class="form-control" placeholder="e.g. Kiprono Adams" required>
+              <span class="form-error-msg">Please enter your full name.</span>
+            </div>
+
+            <div class="form-group" id="custPhoneGroup">
+              <label class="form-label" for="custPhone">Phone Number <span class="required">*</span></label>
+              <input type="tel" id="custPhone" class="form-control" placeholder="e.g. 0720 778 059 or +254 720..." required>
+              <span class="form-error-msg">Please enter a valid telephone number.</span>
+            </div>
+
+            <!-- Takeaway Specific -->
+            <div id="takeawayFields">
+              <div class="form-group">
+                <label class="form-label" for="custPickupTime">Preferred Pickup Time</label>
+                <select id="custPickupTime" class="form-control">
+                  <option value="In 30–45 Minutes">As soon as ready (~30–45 minutes)</option>
+                  <option value="12:30 PM Lunch">12:30 PM (Lunch)</option>
+                  <option value="1:30 PM Lunch">1:30 PM (Lunch)</option>
+                  <option value="5:30 PM Evening">5:30 PM (Early Evening)</option>
+                  <option value="7:00 PM Dinner">7:00 PM (Dinner)</option>
+                  <option value="8:30 PM Dinner">8:30 PM (Late Dinner)</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Delivery Specific -->
+            <div id="deliveryFields" style="display: none;">
+              <div class="form-group" id="custAddressGroup">
+                <label class="form-label" for="custAddress">Delivery Location / Building in Eldoret <span class="required">*</span></label>
+                <input type="text" id="custAddress" class="form-control" placeholder="e.g. Elgon View Estate / Eldoret CBD...">
+                <span class="form-error-msg">Please specify your delivery address.</span>
+              </div>
+              <p style="font-size: 0.75rem; color: var(--color-text-light); margin-bottom: 16px;">
+                * Notice: Delivery availability and rider fees require phone or WhatsApp confirmation.
+              </p>
+            </div>
+
+            <!-- Kitchen Notes -->
+            <div class="form-group">
+              <label class="form-label" for="custNotes">Special Preparation Notes (Optional)</label>
+              <textarea id="custNotes" class="form-control" rows="3" placeholder="e.g. Extra kachumbari, well roasted goat ribs, no onions..."></textarea>
+            </div>
+
+            <div style="background-color: rgba(32, 35, 31, 0.04); border-radius: var(--radius-md); padding: var(--space-4); margin-bottom: var(--space-6); font-size: var(--text-xs); color: var(--color-text-muted);">
+              🔒 <strong>Demo Prototype Submission</strong>: This is a front-end simulation for Kerio Dreams. Upon submitting, your order record will be saved to your browser session and you will have the option to forward it instantly to the restaurant via WhatsApp or telephone.
+            </div>
+
+            <button type="submit" id="orderSubmitBtn" class="btn btn-terracotta btn-lg" style="width: 100%;">
+              Submit Order Request →
+            </button>
+          </form>
+        </div>
+
+        <!-- Right Column: Order Basket Summary -->
+        <div>
+          <div class="order-summary-box">
+            <h3 style="font-size: var(--text-xl); font-family: var(--font-serif); margin-bottom: var(--space-4); border-bottom: 1px solid var(--color-border); padding-bottom: var(--space-3);">
+              Your Order Basket
+            </h3>
+
+            <!-- Order Items List -->
+            <div id="orderCheckoutItems">
+              <!-- Dynamically populated -->
+            </div>
+
+            <div style="margin-top: var(--space-6); border-top: 1px solid var(--color-border); padding-top: var(--space-4);">
+              <div style="display: flex; justify-content: space-between; font-size: var(--text-sm); margin-bottom: var(--space-2);">
+                <span>Items Subtotal:</span>
+                <span id="orderSubtotal" style="font-weight: 600;">KSh 0</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; font-size: var(--text-sm); color: var(--color-text-muted); margin-bottom: var(--space-4);">
+                <span>Demo Delivery / Service Fee:</span>
+                <span>KSh 0</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; font-size: var(--text-lg); font-weight: 700; color: var(--color-primary-dark); padding-top: var(--space-3); border-top: 2px dashed var(--color-border);">
+                <span>Total:</span>
+                <span id="orderTotal" style="color: var(--color-terracotta);">KSh 0</span>
+              </div>
+            </div>
+
+            <div style="margin-top: var(--space-6);">
+              <a href="menu.html" class="btn btn-secondary btn-sm" style="width: 100%;">+ Add More Dishes</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Mobile Sticky Bottom Action Bar -->
+  <nav class="mobile-bottom-bar" aria-label="Mobile Navigation Quick Links">
+    <a href="menu.html" class="bottom-bar-item">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+      <span>Menu</span>
+    </a>
+    <a href="order.html" class="bottom-bar-item active">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+      <span>Order</span>
+    </a>
+    <a href="booking.html" class="bottom-bar-item">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      <span>Book</span>
+    </a>
+    <a href="https://wa.me/254720778059" target="_blank" class="bottom-bar-item" style="color: #25D366;">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771z"/></svg>
+      <span>WhatsApp</span>
+    </a>
+  </nav>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo-brand" style="margin-bottom: var(--space-4);">
+          <span class="logo-title" style="color: var(--color-ivory);">Kerio Dreams</span>
+          <span class="logo-tagline" style="color: var(--color-sage);">Restaurant • Eldoret</span>
+        </div>
+        <p style="font-size: var(--text-sm); color: rgba(247, 243, 233, 0.75); line-height: 1.6;">
+          Authentic Kenyan cuisine, charcoal-grilled nyama choma, and relaxing garden dining.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title">Navigation</h4>
+        <div class="footer-links">
+          <a href="index.html" class="footer-link">Home</a>
+          <a href="menu.html" class="footer-link">Digital Menu</a>
+          <a href="order.html" class="footer-link">Order Online</a>
+          <a href="booking.html" class="footer-link">Book a Table</a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title">Contact</h4>
+        <div class="footer-contact-item">
+          <span>📍</span>
+          <span>Along Kisumu Road, opposite Soin Hotel, Eldoret, Kenya</span>
+        </div>
+        <div class="footer-contact-item">
+          <span>📞</span>
+          <span><a href="tel:+254720778059">+254 720 778 059</a> / <a href="tel:+254721223661">+254 721 223 661</a></span>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title">Direct Inquiries</h4>
+        <button class="btn btn-terracotta btn-sm" onclick="WhatsAppService.openGeneralInquiry()" style="width: 100%;">
+          Chat via WhatsApp
+        </button>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div>© 2026 Kerio Dreams Restaurant. P.O. Box 4660-30100, Eldoret.</div>
+      <div>Interactive Prototype for Client Presentation</div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/config.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/menu-data.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/validation.js"></script>
+  <script src="js/whatsapp.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/order.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

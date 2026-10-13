@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Dining Experience | Kerio Dreams Restaurant Eldoret</title>
+  <meta name="description" content="Discover our lush garden dining, rustic indoor hall, authentic open-fire jiko charcoal grilling, and welcoming family spaces in Eldoret.">
+  <meta property="og:title" content="The Kerio Dreams Experience — Eldoret, Kenya">
+  <meta property="og:description" content="A tranquil garden oasis along Kisumu Road for relaxed meals, family feasts, and group gatherings.">
+  <meta property="og:image" content="/assets/images/garden-dining.jpg">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS Design System -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Prototype Notice -->
+  <div class="prototype-notice">
+    <span>💡 <strong>Interactive Prototype</strong>: Demonstrating destination experiences and group inquiries for Kerio Dreams Restaurant.</span>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container-wide header-inner">
+      <a href="index.html" class="logo-brand">
+        <span class="logo-title">Kerio Dreams</span>
+        <span class="logo-tagline">Restaurant • Eldoret</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="menu.html" class="nav-link">Our Menu</a>
+        <a href="order.html" class="nav-link">Order Online</a>
+        <a href="booking.html" class="nav-link">Book a Table</a>
+        <a href="experience.html" class="nav-link active">Our Experience</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="reviews.html" class="nav-link">Reviews</a>
+        <a href="offers.html" class="nav-link">Offers</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="booking.html" class="btn btn-terracotta btn-sm">Reserve Table</a>
+        
+        <button class="cart-toggle-btn" aria-label="Open Order Basket">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="cart-badge" style="display: none;">0</span>
+        </button>
+
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Open Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-overlay" id="mobileOverlay"></div>
+  <aside class="mobile-drawer" id="mobileDrawer">
+    <div class="mobile-drawer-header">
+      <div class="logo-brand">
+        <span class="logo-title" style="font-size: 1.25rem;">Kerio Dreams</span>
+        <span class="logo-tagline">Restaurant • Eldoret</span>
+      </div>
+      <button id="mobileNavClose" style="font-size: 1.5rem; color: var(--color-charcoal);">&times;</button>
+    </div>
+    <div class="mobile-drawer-links">
+      <a href="index.html" class="mobile-drawer-link">Home</a>
+      <a href="menu.html" class="mobile-drawer-link">Our Menu</a>
+      <a href="order.html" class="mobile-drawer-link">Order Online</a>
+      <a href="booking.html" class="mobile-drawer-link">Book a Table</a>
+      <a href="experience.html" class="mobile-drawer-link active">Our Experience</a>
+      <a href="gallery.html" class="mobile-drawer-link">Photo Gallery</a>
+      <a href="about.html" class="mobile-drawer-link">About Us</a>
+      <a href="reviews.html" class="mobile-drawer-link">Reviews</a>
+      <a href="offers.html" class="mobile-drawer-link">Promotions & Offers</a>
+      <a href="contact.html" class="mobile-drawer-link">Contact & Directions</a>
+    </div>
+    <div class="mobile-drawer-footer">
+      <a href="booking.html" class="btn btn-terracotta" style="width: 100%;">Book a Table</a>
+      <a href="tel:+254720778059" class="btn btn-secondary btn-sm" style="width: 100%;">Call: +254 720 778 059</a>
+    </div>
+  </aside>
+
+  <!-- Hero Header -->
+  <section class="section-py" style="background-color: var(--color-primary-dark); color: var(--color-ivory); text-align: center;">
+    <div class="container">
+      <span class="section-subtitle" style="color: var(--color-sage);">Atmosphere & Hospitality</span>
+      <h1 class="section-title" style="color: var(--color-ivory);">A Destination for Savoring & Gathering</h1>
+      <p class="section-lead" style="color: rgba(247, 243, 233, 0.85); max-width: 720px; margin: 0 auto;">
+        From the gentle rustle of garden leaves to the aromatic smoke rising from the charcoal jiko, explore what makes visiting Kerio Dreams special.
+      </p>
+    </div>
+  </section>
+
+  <!-- Experience Stories (Alternating Sections) -->
+  <section class="section-py" style="background-color: var(--color-ivory);">
+    <div class="container" style="display: flex; flex-direction: column; gap: var(--space-16);">
+      
+      <!-- 1. Garden Dining -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-8); align-items: center;">
+        <div style="border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-md);">
+          <img src="/assets/images/garden-dining.jpg" alt="Kerio Dreams Garden Dining Setting" style="width: 100%; height: 380px; object-fit: cover;">
+        </div>
+        <div>
+          <span class="section-subtitle">Nature & Serenity</span>
+          <h2 style="font-size: var(--text-3xl); margin-bottom: var(--space-4);">Lush Garden Dining</h2>
+          <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: var(--space-4);">
+            Our outdoor garden is an expansive sanctuary of lush green lawns, blooming bougainvillea, and shaded wooden tables. Under the Eldoret sun or relaxing in the afternoon breeze, diners enjoy unhurried meals with family, travelers, and friends.
+          </p>
+          <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: var(--space-6);">
+            As dusk settles, ambient lanterns illuminate the paths, creating an enchanting dining setting unlike any other along Kisumu Road.
+          </p>
+          <a href="booking.html" class="btn btn-terracotta">Book Garden Seating</a>
+        </div>
+      </div>
+
+      <!-- 2. Indoor Dining -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-8); align-items: center;">
+        <div style="order: 2;">
+          <div style="border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-md);">
+            <img src="/assets/images/restaurant-interior.jpg" alt="Kerio Dreams Indoor Dining Hall" style="width: 100%; height: 380px; object-fit: cover;">
+          </div>
+        </div>
+        <div style="order: 1;">
+          <span class="section-subtitle">Rustic Warmth</span>
+          <h2 style="font-size: var(--text-3xl); margin-bottom: var(--space-4);">Rustic Indoor Dining Hall</h2>
+          <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: var(--space-4);">
+            Inside, our dining hall boasts exposed timber trusses, handcrafted woven pendant chandeliers, and warm wood furnishings. Expansive windows frame sweeping views of the garden grounds, ensuring an open, natural ambiance in any weather.
+          </p>
+          <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: var(--space-6);">
+            It is a welcoming venue for business luncheons, evening dinner dates, and guests seeking a quieter dining enclave.
+          </p>
+          <a href="booking.html" class="btn btn-primary">Reserve Indoor Table</a>
+        </div>
+      </div>
+
+      <!-- 3. Charcoal Grilling Jiko -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-8); align-items: center;">
+        <div style="border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-md);">
+          <img src="/assets/images/charcoal-grill.jpg" alt="Chef roasting meat at charcoal jiko" style="width: 100%; height: 380px; object-fit: cover;">
+        </div>
+        <div>
+          <span class="section-subtitle">The Jiko Heritage</span>
+          <h2 style="font-size: var(--text-3xl); margin-bottom: var(--space-4);">Authentic Charcoal-Grilling</h2>
+          <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: var(--space-4);">
+            The heart of authentic Kenyan hospitality is the charcoal jiko. Our grill masters season select prime cuts of goat and chicken simply with sea salt and garlic, roasting them slowly over glowing acacia embers.
+          </p>
+          <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: var(--space-6);">
+            The result is crisp, caramelized bark on the outside and rich, succulent meat inside, carved fresh and served piping hot on wooden boards.
+          </p>
+          <a href="menu.html" class="btn btn-secondary">Explore Grilled Dishes</a>
+        </div>
+      </div>
+
+      <!-- 4. Family & Community Dining -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-8); align-items: center;">
+        <div style="order: 2;">
+          <div style="border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-md);">
+            <img src="/assets/images/family-dining.jpg" alt="Family sharing authentic meal at Kerio Dreams" style="width: 100%; height: 380px; object-fit: cover;">
+          </div>
+        </div>
+        <div style="order: 1;">
+          <span class="section-subtitle">Shared Feasts</span>
+          <h2 style="font-size: var(--text-3xl); margin-bottom: var(--space-4);">Family & Group Celebrations</h2>
+          <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: var(--space-4);">
+            Food in Kenya is meant for sharing. At Kerio Dreams, our long tables accommodate multi-generational families, traveling parties, and milestone anniversaries.
+          </p>
+          <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: var(--space-6);">
+            Children enjoy the garden lawns while adults savor leisurely conversations over steaming pots of ginger Dawa tea and grilled platters.
+          </p>
+          <a href="#group-inquiry" class="btn btn-terracotta">Inquire for Group Dining</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Group & Event Inquiry Form Section -->
+  <section id="group-inquiry" class="section-py" style="background-color: var(--color-ivory-light); border-top: 1px solid var(--color-border);">
+    <div class="container" style="max-width: 760px;">
+      <div class="section-header">
+        <span class="section-subtitle">Private & Group Events</span>
+        <h2 class="section-title">Planning a Group Gathering?</h2>
+        <p class="section-lead">
+          Submit your group details below to request tailored seating arrangements, family sharing menus, or special occasion packages.
+        </p>
+      </div>
+
+      <div style="background-color: var(--color-white); border: 1px solid var(--color-border); border-radius: var(--radius-xl); padding: var(--space-8); box-shadow: var(--shadow-md);">
+        <form id="groupInquiryForm">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4);">
+            <div class="form-group">
+              <label class="form-label" for="groupName">Organizer Full Name <span class="required">*</span></label>
+              <input type="text" id="groupName" class="form-control" placeholder="e.g. Paul Chepkwony" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="groupPhone">Phone Number <span class="required">*</span></label>
+              <input type="tel" id="groupPhone" class="form-control" placeholder="e.g. 0720 778 059" required>
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4);">
+            <div class="form-group">
+              <label class="form-label" for="groupDate">Preferred Event Date</label>
+              <input type="date" id="groupDate" class="form-control">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="groupGuests">Estimated Party Size</label>
+              <input type="number" id="groupGuests" class="form-control" placeholder="e.g. 12" min="6" max="100">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="groupOccasion">Occasion / Type of Event</label>
+            <select id="groupOccasion" class="form-control">
+              <option value="Family Birthday / Milestone">Family Birthday / Milestone Celebration</option>
+              <option value="Corporate / Team Luncheon">Corporate Luncheon / Team Building</option>
+              <option value="Graduation Party">Graduation / Academic Celebration</option>
+              <option value="Travel Tour Group">Travel / Tour Group Dining Stop</option>
+              <option value="Other Gathering">Other Group Gathering</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="groupNotes">Special Requests or Menu Preferences</label>
+            <textarea id="groupNotes" class="form-control" rows="3" placeholder="Tell us about food preferences (e.g. Nyama Choma buffet, dietary requests, cake arrangement)..."></textarea>
+          </div>
+
+          <div style="background-color: rgba(32, 35, 31, 0.04); padding: var(--space-3) var(--space-4); border-radius: var(--radius-sm); margin-bottom: var(--space-6); font-size: var(--text-xs); color: var(--color-text-muted);">
+            * Note: Group arrangements are subject to restaurant management review and confirmation.
+          </div>
+
+          <button type="submit" class="btn btn-terracotta btn-lg" style="width: 100%;">
+            Send Group Inquiry via WhatsApp 📲
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating WhatsApp Action -->
+  <a href="https://wa.me/254720778059?text=Hello%20Kerio%20Dreams%2C%20I%20would%20like%20to%20learn%20more%20about%20your%20dining%20experience." target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="Contact us on WhatsApp">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771z"/>
+    </svg>
+    <span>Chat on WhatsApp</span>
+  </a>
+
+  <!-- Mobile Sticky Bottom Action Bar -->
+  <nav class="mobile-bottom-bar" aria-label="Mobile Navigation Quick Links">
+    <a href="menu.html" class="bottom-bar-item">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+      <span>Menu</span>
+    </a>
+    <a href="order.html" class="bottom-bar-item">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+      <span>Order</span>
+    </a>
+    <a href="booking.html" class="bottom-bar-item">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      <span>Book</span>
+    </a>
+    <a href="https://wa.me/254720778059" target="_blank" class="bottom-bar-item" style="color: #25D366;">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771z"/></svg>
+      <span>WhatsApp</span>
+    </a>
+  </nav>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo-brand" style="margin-bottom: var(--space-4);">
+          <span class="logo-title" style="color: var(--color-ivory);">Kerio Dreams</span>
+          <span class="logo-tagline" style="color: var(--color-sage);">Restaurant • Eldoret</span>
+        </div>
+        <p style="font-size: var(--text-sm); color: rgba(247, 243, 233, 0.75); line-height: 1.6;">
+          Authentic Kenyan cuisine, charcoal-grilled nyama choma, and relaxing garden dining.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title">Navigation</h4>
+        <div class="footer-links">
+          <a href="index.html" class="footer-link">Home</a>
+          <a href="menu.html" class="footer-link">Digital Menu</a>
+          <a href="order.html" class="footer-link">Order Online</a>
+          <a href="booking.html" class="footer-link">Book a Table</a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title">Location</h4>
+        <div class="footer-contact-item">
+          <span>📍</span>
+          <span>Along Kisumu Road, opposite Soin Hotel, Eldoret, Kenya</span>
+        </div>
+        <div class="footer-contact-item">
+          <span>📞</span>
+          <span><a href="tel:+254720778059">+254 720 778 059</a></span>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title">Inquiries</h4>
+        <button class="btn btn-terracotta btn-sm" onclick="WhatsAppService.openGeneralInquiry()" style="width: 100%;">
+          Chat via WhatsApp
+        </button>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div>© 2026 Kerio Dreams Restaurant. P.O. Box 4660-30100, Eldoret.</div>
+      <div>Interactive Prototype Demonstration</div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/config.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/validation.js"></script>
+  <script src="js/whatsapp.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
